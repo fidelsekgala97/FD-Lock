@@ -1,0 +1,250 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f1f1f1;
+}
+
+/* The device with borders */
+.tablet {
+  position: relative;
+  width: 768px;
+  height: 1024px;
+  margin: auto;
+  border: 16px rgb(44, 44, 44) solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.tablet:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #999;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.tablet:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #999;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.tablet .content {
+  width: 768px;
+  height: 1024px;
+  background: #eee;
+  margin: -1px;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+.flex p{
+  background: rgb(44,44,44);
+  color: #fff;
+  padding: .5rem;
+  border: 2px solid #fff;
+  border-radius: .5rem;
+}
+.flex p a{
+  color: skyblue;
+}
+/*form*/
+form label{
+  display: block;
+  padding: .5rem 0;
+  font-weight: 700;
+}
+form input, form select{
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  width: 100%;
+  color: #333;
+}
+button{
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  background: rgba(100,100,100);
+  color: #fff;
+  border: 1px solid #bbb;
+}
+button:hover{
+  background: rgb(44,44,44);
+}
+
+a{
+  text-decoration: none;
+}
+button a{
+  color: #fff;
+}
+/*header*/
+.header{
+  background: rgb(44,44,44);
+  padding: .5rem 0;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.header h1{
+  padding-bottom: .5rem; 
+}
+.header h1 span{
+  color: red;
+  font-size: 2.5rem;
+}
+.header input{
+  border: none;
+}
+/*about section*/
+.about{
+  padding: 1rem;
+}
+.about h2{
+  padding: 1rem 0;
+}
+.about p{
+  line-height: 1.5;
+}
+/*sub header*/
+.subheader{
+  font-family: sans-serif;
+  background: rgb(44,44,44);
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+  color: #fff;
+  box-shadow: 3px 5px 3px red;
+  text-align: center;
+  border-radius: 0 0 .3rem .3rem;
+  border: 1px solid #666;
+}
+
+.form-verify{
+  padding: 5rem;
+}
+.form-verify input{
+  width: 70%;
+  border: 1px solid #bbb;
+}
+.form-verify button{
+  width: 20%;
+}
+/*buttons*/
+.btn{
+  display: flex;
+  justify-content: center;
+}
+
+.btn button{
+  width: 30%;
+  margin: 1rem 0;
+  padding: .7rem 1rem;
+  
+}
+.btn i{
+  font-size: 1.1rem;
+}
+.btn span{
+  padding-left: 1rem;
+}
+
+/*form container*/
+.form-container{
+  width: 80%;
+  margin: 3rem auto;
+  border: 1px solid #bbb;
+  border-radius: .5rem;
+  padding: 1rem;
+  background: #fff;
+
+  moz-box-shadow: 5px 5px 5px 5px rgba(68,68,68,0.6);
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(68,68,68,0.6);
+  box-shadow: 5px 5px 5px 5px rgba(68,68,68,0.6);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+}
+.form-container input{
+  width: 90%;
+}
+.message{
+  padding-top: 2rem;
+  text-align: center;
+}
+
+/*pattern container*/
+.pattern-container{
+  width: 60%;
+  margin: auto;
+}
+.pattern-container .radio-inputs{
+  display: flex;
+  justify-content: space-between;
+
+}
+.radio-inputs div{
+  border: 1px solid #ccc;
+  padding: .3rem;
+  background: #eee;
+  border-radius: .3rem;
+  margin: 1rem 0;
+}
+.pattern-container input{
+  border: 1px solid #ccc;
+}
+
+.pattern-box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 300px;
+  padding: .5rem 0;
+  margin: .5rem auto;
+}
+.pattern-box div{
+  padding: .2rem;
+  border: 1px solid #ccc;
+  border-radius: .4rem;
+  cursor: pointer;
+  margin-bottom: .5rem;
+}
+.pattern-box div:hover{
+  background: #ccc;
+}
+
+.msg{
+  width: 100%;
+  padding: .5rem .2rem;
+  
+  text-align: center;
+  border-radius: .3rem;
+}
+.danger{
+  background-color: red;
+  color: #fff;
+}
+.success{
+  background-color: #9ACD32;
+  color: #fff;
+}
